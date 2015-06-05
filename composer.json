@@ -1,0 +1,30 @@
+{
+	"name": "liftkit/data-seeder",
+	"description": "LiftKit library for seeding test data",
+	"license": "LGP-2.1",
+	"authors": [
+		{
+			"name": "Ryan Williams",
+			"email": "rwilliams@stream9.net",
+			"homepage": "https://www.stream9.net",
+			"role": "Developer"
+		}
+	],
+	"autoload": {
+		"psr-4": {
+			"LiftKit\\DataSeeder": "src/",
+			"LiftKit\\Tests\\Helpers\\DataSeeder\\": "tests/helpers/",
+			"LiftKit\\Tests\\Stub\\DataSeeder\\": "tests/stub/",
+			"LiftKit\\Tests\\Unit\\DataSeeder\\": "tests/unit/"
+		}
+	},
+	"require": {
+		"liftkit/token": "~1.0",
+		"liftkit/database": "~2.6",
+		"ruafozy/mersenne-twister": "~1.3"
+	},
+	"require-dev": {
+		"phpunit/phpunit": "~4.6",
+		"phpunit/dbunit": "~1.3"
+	}
+}
